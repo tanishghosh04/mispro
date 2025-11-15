@@ -259,7 +259,4 @@ else:
     st.warning("⚠️ Please fill all fields before downloading the Excel file.")
     st.button("Download Excel file", disabled=True)
 
-st.markdown("""
----
-Coded with ❤️ by Tanish Ghosh
-""")
+
