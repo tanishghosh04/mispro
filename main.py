@@ -237,8 +237,8 @@ toDate = str(st.date_input("To Date (+ 1)", key="toDate"))
 fomattedToDate = toDate[8:10] + '-' + toDate[5:7] + '-' + toDate[0:4]
 
 # Added custom stylesheet
-with open('style.css', 'r') as jfile:
-    css = f.read()
+with open('style.css', 'r') as cfile:
+    css = cfile.read()
 
 st.markdown(css, unsafe_allow_html=True)
 
@@ -263,6 +263,7 @@ if emailID and password and hodName and toDate and laptopInput != "None":
 else:
     st.warning("⚠️ Please fill all fields before downloading the Excel file.")
     st.button("Download Excel file", disabled=True)
+
 
 
 
