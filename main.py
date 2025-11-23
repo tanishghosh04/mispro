@@ -236,6 +236,11 @@ fromDate = str(st.date_input("From Date", key="fromDate"))
 toDate = str(st.date_input("To Date (+ 1)", key="toDate"))
 fomattedToDate = toDate[8:10] + '-' + toDate[5:7] + '-' + toDate[0:4]
 
+# Added custom stylesheet
+with open('style.css', 'r') as jfile:
+    css = f.read()
+
+st.markdown(css, unsafe_allow_html=True)
 
 # Holiday List JSON
 with open('holiday.json', 'r') as jfile:
@@ -258,5 +263,6 @@ if emailID and password and hodName and toDate and laptopInput != "None":
 else:
     st.warning("⚠️ Please fill all fields before downloading the Excel file.")
     st.button("Download Excel file", disabled=True)
+
 
 
