@@ -53,7 +53,7 @@ def download_excel():
     resp = session.post(login_api_url, data=payload, headers=headers)
     print("Login status:", resp.status_code)
 
-    # Optional: Print cookies to verify authentication
+    
     print("\nCookies after login:")
     for c in session.cookies:
         print(c.name, "=", c.value)
@@ -216,11 +216,11 @@ def download_excel():
                         max_length = length
             ws.column_dimensions[column].width = max_length + 2
 
-    # 🔥 SAVE EXCEL IN MEMORY (NOT ON DISK)
+    # SAVE EXCEL IN MEMORY (NOT ON DISK)
     buffer = BytesIO()
     wb.save(buffer)
     buffer.seek(0)
-    return buffer  # <-- return to UI
+    return buffer
 
 
 # For presenting in browser
@@ -257,6 +257,7 @@ if emailID and password and hodName and toDate and laptopInput != "None":
 else:
     st.warning("⚠️ Please fill all fields before downloading the Excel file.")
     st.button("Download Excel file", disabled=True)
+
 
 
 
