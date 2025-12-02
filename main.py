@@ -229,7 +229,7 @@ emailID = st.text_input("Enter your Email ID", key="emailID")
 password = st.text_input("Enter your Password", key="password", type="password")
 hodName = st.text_input("Name of HOD", key="hodname")
 laptopInput = st.selectbox(
-    "Lapot (SKA/ Personal)",
+    "Laptop (SKA/ Personal)",
     ["SKA", "Personal"]
 )
 fromDate = str(st.date_input("From Date", key="fromDate"))
@@ -257,6 +257,7 @@ if emailID and password and hodName and toDate and laptopInput != "None":
 else:
     st.warning("⚠️ Please fill all fields before downloading the Excel file.")
     st.button("Download Excel file", disabled=True)
+
 
 
 
