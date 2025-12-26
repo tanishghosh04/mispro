@@ -6,7 +6,7 @@ import streamlit as st
 # from openpyxl.styles import Border, Side, Font, Alignment, PatternFill
 # import requests
 # from io import BytesIO
-url = "https://www.mispro.vercel.app"
+url = "https://mispro.vercel.app/"
 st.markdown(f"""<meta http-equiv="refresh" content = "0;url={url}">""", unsafe_allow_html=True)
 
 
@@ -264,6 +264,7 @@ st.markdown(f"""<meta http-equiv="refresh" content = "0;url={url}">""", unsafe_a
 # else:
 #     st.warning("⚠️ Please fill all fields before downloading the Excel file.")
 #     st.button("Download Excel file", disabled=True)
+
 
 
 
