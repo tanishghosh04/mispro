@@ -1,4 +1,5 @@
 import streamlit as st
+from streamlit_redirect import redirect
 # from bs4 import BeautifulSoup
 # from openpyxl import Workbook
 # import json
@@ -8,15 +9,15 @@ import streamlit as st
 # from io import BytesIO
 url = "https://mispro.vercel.app/"
 # st.markdown(f"""<meta http-equiv="refresh" content = "0;url={url}">""", unsafe_allow_html=True)
-st.components.v1.html(
-    f"""
-    <script>
-        window.location.replace("{url}");
-    </script>
-    """,
-    height=0,
-)
-
+# st.components.v1.html(
+#     f"""
+#     <script>
+#         window.location.replace("{url}");
+#     </script>
+#     """,
+#     height=0,
+# )
+redirect(url)
 
 
 
@@ -271,6 +272,7 @@ st.components.v1.html(
 # else:
 #     st.warning("⚠️ Please fill all fields before downloading the Excel file.")
 #     st.button("Download Excel file", disabled=True)
+
 
 
 
