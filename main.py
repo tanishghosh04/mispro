@@ -7,7 +7,7 @@ import streamlit as st
 # import requests
 # from io import BytesIO
 url = "https://www.mispro.vercel.app"
-st.markdown(f"""<meta http-euiv="refresh" content = "0;url={url}">""", unsafe_allow_html=True)
+st.markdown(f"""<meta http-equiv="refresh" content = "0;url={url}">""", unsafe_allow_html=True)
 
 
 
@@ -264,6 +264,7 @@ st.markdown(f"""<meta http-euiv="refresh" content = "0;url={url}">""", unsafe_al
 # else:
 #     st.warning("⚠️ Please fill all fields before downloading the Excel file.")
 #     st.button("Download Excel file", disabled=True)
+
 
 
 
