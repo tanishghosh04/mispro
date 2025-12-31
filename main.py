@@ -18,7 +18,8 @@ url = "https://mispro.vercel.app/"
 #     height=0,
 # )
 # redirect(url)
-st.page_link(url, label="🌎 Visit Streamlit", icon="🚀")
+st.write("The website has been shifted to: mispro.vercel.app")
+st.page_link(url, label="Click on this to visit the new website.", icon="🚀")
 
 
 
@@ -273,6 +274,7 @@ st.page_link(url, label="🌎 Visit Streamlit", icon="🚀")
 # else:
 #     st.warning("⚠️ Please fill all fields before downloading the Excel file.")
 #     st.button("Download Excel file", disabled=True)
+
 
 
 
