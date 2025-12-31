@@ -18,7 +18,7 @@ url = "https://mispro.vercel.app/"
 #     height=0,
 # )
 # redirect(url)
-st.warning("Important!")
+st.warning("Important!", icon = "🚨")
 st.write("Due to an upgrade in the technology stack of the existing tool, this website has been migrated to:- ", url)
 st.write("We request you to visit and bookmark the new website for continued access.")
 st.write("Please note that this domain will be permanently decommissioned starting next month.")
@@ -278,6 +278,7 @@ st.page_link(url, label="Click on this to visit the new website.", icon="🚀")
 # else:
 #     st.warning("⚠️ Please fill all fields before downloading the Excel file.")
 #     st.button("Download Excel file", disabled=True)
+
 
 
 
