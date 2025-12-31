@@ -18,7 +18,8 @@ url = "https://mispro.vercel.app/"
 #     height=0,
 # )
 # redirect(url)
-st.write("The website has been shifted to: mispro.vercel.app")
+st.warning("Important!")
+st.write(f"The website has been shifted to: {url}. Please bookmark the new website after visiting it. This domain will be closed permanently from next month.")
 st.page_link(url, label="Click on this to visit the new website.", icon="🚀")
 
 
@@ -274,6 +275,7 @@ st.page_link(url, label="Click on this to visit the new website.", icon="🚀")
 # else:
 #     st.warning("⚠️ Please fill all fields before downloading the Excel file.")
 #     st.button("Download Excel file", disabled=True)
+
 
 
 
